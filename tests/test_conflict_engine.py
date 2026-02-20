@@ -1,5 +1,5 @@
-from conflict_engine import evaluate_day
-from models import TaskThreshold
+from backend.conflict_engine import evaluate_day
+from backend.models import TaskThreshold
 
 def test_red_low_temp():
     hours = [{"temp": 30, "wind_speed": 5}]

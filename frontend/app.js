@@ -6,7 +6,7 @@ const statusMessage = document.getElementById("statusMessage");
 analyzeBtn.addEventListener("click", fetchWeatherData);
 
 async function fetchWeatherData() {
-    const zip = zipInput.ariaValueMax.trim();
+    const zip = zipInput.value.trim();
 
     if(!zip) {
         showStatus("Please enter a ZIP Code.", true);

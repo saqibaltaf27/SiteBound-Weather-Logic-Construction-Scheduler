@@ -1,4 +1,4 @@
-from models import TaskThreshold
+from backend.models import TaskThreshold
 
 TASK_THRESHOLDS = {
     "Concrete Pouring": TaskThreshold(min_temp=40, max_wind=15, allow_rain=False),
