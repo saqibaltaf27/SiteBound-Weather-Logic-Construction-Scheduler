@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SiteBound | Weather Scheduler</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div>
+                <h1>SiteBound</h1>
+                <p class="subtitle">Weather-Logic Construction Scheduler</p>
+            </div>
+
+            <div class="zip-container">
+                <input
+                type="text"
+                id="zipInput"
+                placeholder="Enter ZIP Code"
+                maxlength="10"/>
+                <button id="analyzeBtn">Analyze</button>
+            </div>
+        </header>
+
+        <section class="legend">
+            <div class="legend-item green">Green - Safe</div>
+            <div class="legend-item yellow">Yellow - Caution</div>
+            <div class="legend-item red">Red- No-Go</div>
+        </section>
+
+        <main>
+            <div id="statusMessage" class="status"></div>
+            <div id="dashboard" class="dashboard"></div>
+        </main>
+
+        <footer>
+            <p>2026 Arbor & Beam Custom Homes - SiteBound</p>
+        </footer>
+        <script src="config.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

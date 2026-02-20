@@ -1,0 +1,27 @@
+Project-Name: SiteBound: Weather-Logic Construction Scheduler
+
+Goal: Build a web-based scheduling utility that integrates live Weather data to proactively flag "No-Go" construction days for Weather-sensitive activities such as concrete pouring, roofing, painting, and crane operations.
+
+Requirements:
+    1. Threshold configuration Engine
+        - Users must be able to define weather-sensitive construction tasks.
+        - Must Support at least four predefined tasks (concrete pouring, Roofing, Exterior Painting, Crane operations)
+        - Each task must allow minimum temperature Threshold, maximum wind speed Threshold, precipitation tolerance
+    2. Third Party Weather API Integration
+        - Integrate with OpenWeatherMap API
+        - Fetch 7-day hourly forecast
+        - Use Environment variable for API Key.
+    3. Conflict Detection Logic
+        - Compare forecast data against task thresholds, mock project schedule
+        - Must include unit tests validating Logic
+    4. Project Dashboard (Web UI)
+        - Display upcoming 7 days.
+        - Color-coded cards per task.
+        - Must show temperature, wind speed, rain indicator, risk level badge.
+    5. Resilience & Error handling
+
+Deliverables:
+    1. Codebase: A ZIP file containing the complete, well-documented source code.
+    2. Documentation: A README file explaining how to configure task thresholds, how to insert a personal API key, and how to run the application locally.
+    3. Demonstration: A short screen recording (MP4 or link) showing the tool fetching data for a specific location and identifying a weather conflict for a scheduled task.
+    4. Deployment: A link to a live demo hosted on a platform like Vercel, Netlify, or Render.
